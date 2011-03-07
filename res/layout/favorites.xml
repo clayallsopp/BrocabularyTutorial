@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/term_hint"
+        android:text="What's your brocab?" />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:layout_below="@id/term_hint"
+        android:id="@+id/create_term" 
+        android:singleLine="true"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_description"
+        android:gravity="center_horizontal"
+        android:id="@+id/description_hint"
+        android:text="Give a sweet definition" />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:textSize="20px"
+        android:id="@id/create_description" 
+        android:singleLine="true"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_author"
+        android:gravity="center_horizontal"
+        android:id="@+id/description_hint"
+        android:text="And your name? (optional!)" />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_buttons"
+        android:gravity="center_horizontal"
+        android:textSize="20px"
+        android:id="@id/create_author" 
+        android:singleLine="true"/>
+    <LinearLayout 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true" 
+        android:orientation="horizontal"
+        android:id="@id/create_buttons">
+        <Button
+            android:id="@+id/create_back"
+            android:text="Back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/create_upload"
+            android:text="Upload"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:id="@+id/detail_term" />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:textSize="30px"
+        android:id="@+id/detail_description" />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detail_buttons"
+        android:gravity="center_horizontal"
+        android:textSize="30px"
+        android:id="@+id/detail_author" />
+    <LinearLayout 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true" 
+        android:orientation="horizontal"
+        android:id="@id/detail_buttons">
+        <Button
+            android:id="@+id/detail_back"
+            android:text="Back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/detail_add"
+            android:text="Add to Favorites"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>
